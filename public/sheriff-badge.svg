@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="50%" style="stop-color:#ffb700"/>
+      <stop offset="100%" style="stop-color:#b8860b"/>
+    </linearGradient>
+  </defs>
+  <!-- Star badge -->
+  <polygon 
+    points="50,5 61,35 95,35 68,55 79,90 50,70 21,90 32,55 5,35 39,35" 
+    fill="url(#gold)" 
+    stroke="#8b4513" 
+    stroke-width="2"
+  />
+  <!-- Inner circle -->
+  <circle cx="50" cy="50" r="18" fill="#8b4513"/>
+  <circle cx="50" cy="50" r="15" fill="url(#gold)"/>
+  <!-- SHERIFF text suggestion via inner details -->
+  <circle cx="50" cy="50" r="10" fill="#8b4513" opacity="0.3"/>
+</svg>
