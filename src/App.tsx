@@ -33,7 +33,11 @@ import { Reorder } from "framer-motion";
 import { Link } from 'react-router-dom';
 
 // --- Admin Password from Environment Variables ---
-const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD
+const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'sheriff';
+
+// Debug log (remove in production if sensitive)
+console.log('Admin Auth Configured:', !!import.meta.env.VITE_ADMIN_PASSWORD);
+
 
 // --- Firebase Configuration from Environment Variables ---
 const firebaseConfig = {
