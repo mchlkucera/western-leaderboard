@@ -37,6 +37,8 @@ const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'sheriff';
 
 // Debug log (remove in production if sensitive)
 console.log('Admin Auth Configured:', !!import.meta.env.VITE_ADMIN_PASSWORD);
+console.log('Password Length:', import.meta.env.VITE_ADMIN_PASSWORD?.length);
+
 
 
 // --- Firebase Configuration from Environment Variables ---
