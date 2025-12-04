@@ -239,7 +239,12 @@ const PlayerCard: React.FC<PlayerCardProps> = ({ player, liveData, index, maxBou
                 onKeyDown={handleKeyDown}
                 className="bg-transparent border-b border-stone-300 focus:border-amber-600 outline-none w-20 text-right font-mono font-bold text-lg"
               />
-              <span className="inline-block w-4 h-3 bg-gradient-to-b from-yellow-300 via-amber-400 to-amber-600 rounded-sm border border-amber-700 shadow-sm" title="Gold Bars"></span>
+              <img 
+                src="/gold-bars.png" 
+                alt="Gold Bars" 
+                className="w-6 h-6 object-contain drop-shadow-sm filter sepia-[.2] contrast-125" 
+                title="Gold Stash"
+              />
             </div>
           </div>
           <GoldBar value={liveData.bounty || 0} max={maxBounty} />
@@ -605,7 +610,10 @@ export default function App() {
                       />
                     </div>
                     <div className="w-full md:w-32">
-                      <label className="block text-xs font-bold uppercase text-stone-600 mb-1">Initial Bars</label>
+                      <label className="block text-xs font-bold uppercase text-stone-600 mb-1 flex items-center gap-1">
+                        Initial Stash
+                        <img src="/gold-bars.png" className="w-3 h-3" alt="" />
+                      </label>
                       <input
                         type="number"
                         value={newBounty}

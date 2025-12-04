@@ -193,7 +193,12 @@ const PlayerCard: React.FC<PlayerCardProps> = ({ player, liveData, index, maxBou
             <span className="text-xs font-bold text-stone-500 uppercase tracking-widest">Gold Stash</span>
             <div className="flex items-center gap-1 text-amber-700 font-mono font-bold text-lg">
               <span>{liveData.bounty || 0}</span>
-              <span className="inline-block w-4 h-3 bg-gradient-to-b from-yellow-300 via-amber-400 to-amber-600 rounded-sm border border-amber-700 shadow-sm" title="Gold Bars"></span>
+              <img 
+                src="/gold-bars.png" 
+                alt="Gold Bars" 
+                className="w-6 h-6 object-contain drop-shadow-sm filter sepia-[.2] contrast-125" 
+                title="Gold Stash"
+              />
             </div>
           </div>
           <GoldBar value={liveData.bounty || 0} max={maxBounty} />
