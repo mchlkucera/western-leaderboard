@@ -645,6 +645,7 @@ export default function App() {
                     value={player}
                     id={player.id}
                     style={{ cursor: "default" }}
+                    drag={false}
                   >
                     <PlayerCard 
                       player={player} 
