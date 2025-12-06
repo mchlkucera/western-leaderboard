@@ -39,3 +39,4 @@ const GoldBar: React.FC<GoldBarProps> = ({ value, max }) => {
 
 export default GoldBar;
 
+

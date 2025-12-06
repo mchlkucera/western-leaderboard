@@ -7,3 +7,4 @@ export interface Outlaw {
   status?: string;
 }
 
+
