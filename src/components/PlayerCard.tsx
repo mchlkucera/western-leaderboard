@@ -65,17 +65,17 @@ const PlayerCard: React.FC<PlayerCardProps> = ({
         <div className="absolute top-2 right-2 flex items-center gap-1 z-10">
            <button
                 onClick={() => updateBounty(player.id, liveData.bounty, -1)}
-                className="p-1 bg-stone-200 hover:bg-red-100 text-stone-700 hover:text-red-700 rounded transition-colors shadow-sm"
+                className="p-2 bg-stone-200 hover:bg-red-100 text-stone-700 hover:text-red-700 rounded transition-colors shadow-sm"
                 title="Remove 1 Bar"
             >
-                <Minus size={14} />
+                <Minus size={18} />
             </button>
             <button
-                onClick={() => updateBounty(player.id, liveData.bounty, 5)}
-                className="p-1 bg-stone-200 hover:bg-green-100 text-stone-700 hover:text-green-700 rounded transition-colors shadow-sm"
-                title="Add 5 Bars"
+                onClick={() => updateBounty(player.id, liveData.bounty, 1)}
+                className="p-2 bg-stone-200 hover:bg-green-100 text-stone-700 hover:text-green-700 rounded transition-colors shadow-sm"
+                title="Add 1 Bar"
             >
-                <Plus size={14} />
+                <Plus size={18} />
             </button>
         </div>
       )}
@@ -83,7 +83,7 @@ const PlayerCard: React.FC<PlayerCardProps> = ({
       <div className="flex flex-col gap-2 h-full">
         
         {/* Header Section (Avatar + Name) */}
-        <div className="flex flex-row items-center gap-2 w-full pr-14"> {/* Added pr-14 to avoid overlap with admin controls */}
+        <div className="flex flex-row items-center gap-2 w-full pr-20"> {/* Added pr-20 to avoid overlap with larger admin controls */}
             {/* Avatar Image */}
             <div className="flex-shrink-0">
             <div className="w-10 h-10 md:w-20 md:h-20 bg-stone-300 rounded overflow-hidden border-2 border-stone-600 shadow-inner relative">
